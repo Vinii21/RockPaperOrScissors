@@ -1,0 +1,39 @@
+.btn-play {
+  position: relative;
+  background: #293241;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: "Onest", serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #E0FBFC;
+  border: none;
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: transform 0.8s ease-in-out;
+  overflow: hidden;
+}
+
+.btn-play:hover {
+  transform: scale(0.9);
+}
+
+.btn-play::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(105deg, rgba(69,127,202,1) 32%, rgba(41,50,65,1) 72%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.btn-play:hover::before {
+  opacity: 1;
+}
+
+

@@ -2,7 +2,7 @@
   position: relative;
   background: #293241;
   width: 200px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 25px;
   font-family: "Onest", serif;
   font-size: 48px;
@@ -10,13 +10,11 @@
   color: #E0FBFC;
   border: none;
   cursor: pointer;
-  transform: scale(0.8);
-  transition: transform 0.8s ease-in-out;
-  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 
 .btn-play:hover {
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 
 .btn-play::before {
@@ -26,14 +24,56 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 25px;
   background: linear-gradient(105deg, rgba(69,127,202,1) 32%, rgba(41,50,65,1) 72%);
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .btn-play:hover::before {
   opacity: 1;
 }
 
+.btn-play .scale{
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-play .scale_paper {
+  top: 10px;
+  right: 70px;
+}
+.btn-play .scale_rock {
+  top: 10px;
+  left: 40px;
+}
+.btn-play .scale_scissors {
+  bottom: 13px;
+  left: 50%;
+}
+.btn-play:hover .scale_rock {
+  opacity: 1;
+  top: -40px;
+  left: -5px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.btn-play:hover .scale_paper {
+  opacity: 1;
+  top: -50px;
+  right: 80px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.btn-play:hover .scale_scissors {
+  opacity: 1;
+  bottom: 30px;
+  left: 30%;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
 

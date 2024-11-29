@@ -7,9 +7,19 @@
 }
 body{
   background: radial-gradient(circle at center, #98C1D9 47%, #516673 100%);
-  font-family: "Onest", serif;
+}
+body main{
+  position: relative;
+  overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6, p, span, input, textarea, label, li, a, button{
   color: #293241;
   cursor: default;
+  font-family: "Onest", serif;
+}
+.social{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 35px;
+  color: #d3eef0;
 }

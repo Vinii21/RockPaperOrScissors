@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { TitleH1Component } from "../../../shared/shared/title-h1/title-h1.component";
-import { BtnPlayComponent } from "../../../shared/shared/btn-play/btn-play.component";
+import { TitleH1Component } from '../../shared/title-h1/title-h1.component';
+import { BtnPlayComponent } from '../../shared/btn-play/btn-play.component';
+
 
 @Component({
   selector: 'app-home',
